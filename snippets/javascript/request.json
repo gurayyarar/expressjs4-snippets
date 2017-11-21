@@ -1,0 +1,32 @@
+{
+    "Request Accepts": {
+        "prefix": "exp4-req-accepts",
+        "body": "req.accepts(${1:types});$0",
+        "description": "Checks if the specified content types are acceptable, based on the request’s Accept HTTP header field."
+    },
+    "Request Accepts Charsets": {
+        "prefix": "exp4-req-accepts-charsets",
+        "body": "req.acceptsCharsets(${1:charset});$0",
+        "description": "Returns the first accepted charset of the specified character sets, based on the request’s Accept-Charset HTTP header field."
+    },
+    "Request Accepts Languages": {
+        "prefix": "exp4-req-accepts-languages",
+        "body": "req.acceptsLanguages(${1:lang});$0",
+        "description": "Returns the first accepted language of the specified languages, based on the request’s Accept-Language HTTP header field."
+    },
+    "Request Get": {
+        "prefix": "exp4-req-get",
+        "body": "req.get('${1:field}');$0",
+        "description": "Returns the specified HTTP request header field (case-insensitive match)."
+    },
+    "Request Is": {
+        "prefix": "exp4-req-is",
+        "body": "req.is('${1:type}');$0",
+        "description": "Returns the matching content type if the incoming request’s “Content-Type” HTTP header field matches the MIME type specified by the type parameter. Returns false otherwise."
+    },
+    "Request Range": {
+        "prefix": "exp4-req-range",
+        "body": "req.range(${1:size});$0",
+        "description": "Range header parser."
+    }
+}

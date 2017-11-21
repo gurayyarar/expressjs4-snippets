@@ -1,0 +1,131 @@
+{
+    "App Variable": {
+        "prefix": "exp4-app",
+        "body": "const app = express();",
+        "description": "Add app variable"
+    },
+    "All HTTP Requests": {
+        "prefix": "exp4-app-all",
+        "body": [
+            "app.all('${1:path}', (req, res, next) => {",
+            "\t$2",
+            "\tnext();",
+            "});$0"
+        ],
+        "description": "This method is like the standard app.METHOD() methods, except it matches all HTTP verbs."
+    },
+    "HTTP GET Requests": {
+        "prefix": "exp4-app-get",
+        "body": [
+            "app.get('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Create HTTP GET requests"
+    },
+    "HTTP POST Requests": {
+        "prefix": "exp4-app-post",
+        "body": [
+            "app.post('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Create HTTP POST requests"
+    },
+    "HTTP PUT Requests": {
+        "prefix": "exp4-app-put",
+        "body": [
+            "app.put('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Create HTTP PUT requests"
+    },
+    "HTTP DELETE Requests": {
+        "prefix": "exp4-app-delete",
+        "body": [
+            "app.delete('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Routes HTTP DELETE requests to the specified path with the specified callback functions."
+    },
+    "HTTP PATCH Requests": {
+        "prefix": "exp4-app-patch",
+        "body": [
+            "app.patch('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Create HTTP PATCH requests"
+    },
+    "App Disable": {
+        "prefix": "exp4-app-disable",
+        "body": "app.disable('${1:name}');$0",
+        "description": "Sets the Boolean setting name to false, where name is one of the properties from the app settings table."
+    },
+    "App Disabled": {
+        "prefix": "exp4-app-disabled",
+        "body": "app.disabled('${1:name}');$0",
+        "description": "Returns true if the Boolean setting name is disabled (false), where name is one of the properties from the app settings table."
+    },
+    "App Enable": {
+        "prefix": "exp4-app-enable",
+        "body": "app.enable('${1:name}');$0",
+        "description": "Sets the Boolean setting name to true, where name is one of the properties from the app settings table."
+    },
+    "App Enabled": {
+        "prefix": "exp4-app-enabled",
+        "body": "app.enabled('${1:name}');$0",
+        "description": "Returns true if the setting name is enabled (true), where name is one of the properties from the app settings table."
+    },
+    "App Engine": {
+        "prefix": "exp4-app-engine",
+        "body": "app.engine('${1:ext}', ${2:callback});$0",
+        "description": "Registers the given template engine callback as ext."
+    },
+    "App Param": {
+        "prefix": "exp4-app-param",
+        "body": "app.param('${1:name}', ${2:callback});$0",
+        "description": "Add callback triggers to route parameters, where name is the name of the parameter or an array of them, and callback is the callback function."
+    },
+    "App Path": {
+        "prefix": "exp4-app-path",
+        "body": "app.path();$0",
+        "description": "Returns the canonical path of the app, a string."
+    },
+    "App Render": {
+        "prefix": "exp4-app-render",
+        "body": "app.render('${1:view}', ${2:locals}, ${3:callback});$0",
+        "description": "Returns the rendered HTML of a view via the callback function."
+    },
+    "App Route": {
+        "prefix": "exp4-app-route",
+        "body": "app.route('${1:path}');$0",
+        "description": "Returns an instance of a single route, which you can then use to handle HTTP verbs with optional middleware."
+    },
+    "App Set": {
+        "prefix": "exp4-app-set",
+        "body": "app.set('${1:name}', ${2:value});$0",
+        "description": "Assigns setting name to value."
+    },
+    "App Listen": {
+        "prefix": "exp4-app-listen",
+        "body": "app.listen(${1:port});$0",
+        "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
+    },
+    "App Listen With Callback": {
+        "prefix": "exp4-app-listen-with-callback",
+        "body": [
+            "app.listen(${1:port}, () => {",
+            "\tconsole.log('Server started on ${1:port}');",
+            "});"
+        ],
+        "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
+    },
+    "App Use": {
+        "prefix": "exp4-app-use",
+        "body": "app.use($1);",
+        "description": "Mounts the specified middleware function or functions at the specified path."
+    }
+}

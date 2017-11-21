@@ -1,0 +1,53 @@
+{
+    "ExpressJs 4 Router Variable": {
+        "prefix": "exp4-router",
+        "body": "const router = express.Router();",
+        "description": "Add router variable"
+    },
+    "Router All": {
+        "prefix": "exp4-router-all",
+        "body": [
+            "router.all('${1:path}', (req, res, next) => {",
+            "\t$2",
+            "\tnext();",
+            "});$0"
+        ],
+        "description": "This method is just like the router.METHOD() methods, except that it matches all HTTP methods (verbs)."
+    },
+    "Router GET": {
+        "prefix": "exp4-router-get",
+        "body": [
+            "app.get('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Routes HTTP GET requests to the specified path with the specified callback functions."
+    },
+    "Router POST": {
+        "prefix": "exp4-router-post",
+        "body": [
+            "app.post('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Routes HTTP POST requests to the specified path with the specified callback functions."
+    },
+    "Router PUT": {
+        "prefix": "exp4-router-put",
+        "body": [
+            "app.put('${1:path}', (req, res) => {",
+            "\t$2",
+            "});$0"
+        ],
+        "description": "Routes HTTP PUT requests to the specified path with the specified callback functions."
+    },
+    "Router DELETE": {
+        "prefix": "exp4-router-delete",
+        "body": [
+            "router.delete('${1:path}', (req, res) => {",
+            "\t$2",
+            "});"
+        ],
+        "description": "Routes HTTP DELETE requests to the specified path with the specified callback functions."
+    }
+}

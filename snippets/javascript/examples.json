@@ -1,0 +1,20 @@
+{
+    "Example - Hello World": {
+        "prefix": "exp4-example-helloworld",
+        "body": [
+            "const express = require('express');",
+            "const app = express();",
+            "",
+            "app.get('/', (req, res) => {",
+            "\tres.send('Hello World!');",
+            "});",
+            "",
+            "app.listen(${1:port}, () => {",
+            "\tconsole.log('Example app listening on port ${1:port}!');",
+            "});",
+            "",
+            "//Run app, then load http://localhost:${1:port} in a browser to see the output.$0"
+        ],
+        "description": "Create 'Hello World' app"
+    }
+}
