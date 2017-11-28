@@ -1,6 +1,6 @@
 {
     "Example - Hello World": {
-        "prefix": "exp4-example-helloworld",
+        "prefix": "e4-example-helloworld",
         "body": [
             "const express = require('express');",
             "const app = express();",

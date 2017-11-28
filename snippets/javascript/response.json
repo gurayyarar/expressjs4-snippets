@@ -1,46 +1,46 @@
 {
     "Response Append": {
-        "prefix": "exp4-res-append",
+        "prefix": "e4-res-append",
         "body": "res.append('${1:field}', ${2:value});$0",
         "description": "Appends the specified value to the HTTP response header field."
     },
     "Response Attachment": {
-        "prefix": "exp4-res-attachment",
+        "prefix": "e4-res-attachment",
         "body": "res.attachment('${1:filename}');$0",
         "description": "Sets the HTTP response Content-Disposition header field to attachment."
     },
     "Response Cookie": {
-        "prefix": "exp4-res-cookie",
+        "prefix": "e4-res-cookie",
         "body": "res.cookie('${1:name}', ${2:value});$0",
         "description": "Sets cookie name to value. The value parameter may be a string or object converted to JSON."
     },
     "Response Cookie With Options": {
-        "prefix": "exp4-res-cookie-with-options",
+        "prefix": "e4-res-cookie-with-options",
         "body": "res.cookie('${1:name}', ${2:value}, ${3:options});$0",
         "description": "Sets cookie name to value. The value parameter may be a string or object converted to JSON."
     },
     "Response Clear Cookie": {
-        "prefix": "exp4-res-clear-cookie",
+        "prefix": "e4-res-clear-cookie",
         "body": "res.clearCookie('${1:name}');$0",
         "description": "Clears the cookie specified by name."
     },
     "Response Clear Cookie With Options": {
-        "prefix": "exp4-res-clear-cookie-with-options",
+        "prefix": "e4-res-clear-cookie-with-options",
         "body": "res.clearCookie('${1:name}', ${2:options});$0",
         "description": "Clears the cookie specified by name."
     },
     "Response Download": {
-        "prefix": "exp4-res-download",
+        "prefix": "e4-res-download",
         "body": "res.download('${1:path}');$0",
         "description": "Transfers the file at path as an attachment. Typically, browsers will prompt the user for download."
     },
     "Response End": {
-        "prefix": "exp4-res-end",
+        "prefix": "e4-res-end",
         "body": "res.end();$0",
         "description": "Ends the response process."
     },
     "Response Format": {
-        "prefix": "exp4-res-format",
+        "prefix": "e4-res-format",
         "body": [
             "res.format({",
             "\t'${1:format}': () => {",
@@ -51,22 +51,22 @@
         "description": "Performs content-negotiation on the Accept HTTP header on the request object, when present."
     },
     "Response Get": {
-        "prefix": "exp4-res-get",
+        "prefix": "e4-res-get",
         "body": "res.get('${1:field}');$0",
         "description": "Returns the HTTP response header specified by field. The match is case-insensitive."
     },
     "Response Json": {
-        "prefix": "exp4-res-json",
+        "prefix": "e4-res-json",
         "body": "res.json(${1:body});$0",
         "description": "Sends a JSON response."
     },
     "Response Jsonp": {
-        "prefix": "exp4-res-jsonp",
+        "prefix": "e4-res-jsonp",
         "body": "res.jsonp(${1:body});$0",
         "description": "Sends a JSON response with JSONP support."
     },
     "Response Links": {
-        "prefix": "exp4-res-links",
+        "prefix": "e4-res-links",
         "body": [
             "res.links({",
             "\tnext: '${1:link}',",
@@ -76,62 +76,62 @@
         "description": "Joins the links provided as properties of the parameter to populate the response’s Link HTTP header field."
     },
     "Response Location": {
-        "prefix": "exp4-res-location",
+        "prefix": "e4-res-location",
         "body": "res.location(${1:path});$0",
         "description": "Sends a JSON response with JSONP support."
     },
     "Response Redirect": {
-        "prefix": "exp4-res-redirect",
+        "prefix": "e4-res-redirect",
         "body": "res.redirect('${1:path}');$0",
         "description": "Redirects to the URL derived from the specified path."
     },
     "Response Redirect With Status": {
-        "prefix": "exp4-res-redirect-with-status",
+        "prefix": "e4-res-redirect-with-status",
         "body": "res.redirect(${1:statusCode}, '${2:path}');$0",
         "description": "Redirects to the URL derived from the specified path, with specified status, a positive integer that corresponds to an HTTP status code."
     },
     "Response Render": {
-        "prefix": "exp4-res-render",
+        "prefix": "e4-res-render",
         "body": "res.render('${1:view}');$0",
         "description": "Renders a view and sends the rendered HTML string to the client."
     },
     "Response Send": {
-        "prefix": "exp4-res-send",
+        "prefix": "e4-res-send",
         "body": "res.send(${1:body});$0",
         "description": "Sends the HTTP response."
     },
     "Response Send File": {
-        "prefix": "exp4-res-send-file",
+        "prefix": "e4-res-send-file",
         "body": "res.sendFile('${1:path}');$0",
         "description": "Transfers the file at the given path."
     },
     "Response Send Status": {
-        "prefix": "exp4-res-send-status",
+        "prefix": "e4-res-send-status",
         "body": "res.sendStatus(${1:statusCode});$0",
         "description": "Sets the response HTTP status code to statusCode and send its string representation as the response body."
     },
     "Response Set": {
-        "prefix": "exp4-res-set",
+        "prefix": "e4-res-set",
         "body": "res.set(${1:value});$0",
         "description": "Sets the response’s HTTP header field to value. To set multiple fields at once, pass an object as the parameter."
     },
     "Response Status": {
-        "prefix": "exp4-res-status",
+        "prefix": "e4-res-status",
         "body": "res.status(${1:statusCode});$0",
         "description": "Sets the HTTP status for the response."
     },
     "Response Rss": {
-        "prefix": "exp4-res-rss",
+        "prefix": "e4-res-rss",
         "body": "res.status(${1:value}).send(${2:value});$0",
         "description": "res.status() chained with res.send()"
     },
     "Response Type": {
-        "prefix": "exp4-res-type",
+        "prefix": "e4-res-type",
         "body": "res.type('${1:type}');$0",
         "description": "Sets the Content-Type HTTP header to the MIME type as determined by mime.lookup() for the specified type."
     },
     "Response Vary": {
-        "prefix": "exp4-res-vary",
+        "prefix": "e4-res-vary",
         "body": "res.vary('${1:vary}').render('${2:render}');$0",
         "description": "Adds the field to the Vary response header, if it is not there already."
     }

@@ -1,6 +1,6 @@
 {
     "404 Not Found": {
-        "prefix": "exp4-404-handler",
+        "prefix": "e4-404-handler",
         "body": [
             "app.use(function (req, res, next) {",
             "\tres.status(404).send('${1:404 - Not Found!}');",
@@ -9,7 +9,7 @@
         "description": "Create 404 Not Found Handler"
     },
     "500 Error": {
-        "prefix": "exp4-500-handler",
+        "prefix": "e4-500-handler",
         "body": [
             "app.use(function (err, req, res, next) {",
             "\tres.status(500).send('${1:500 - Something was error!}');",

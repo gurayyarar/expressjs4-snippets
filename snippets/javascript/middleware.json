@@ -1,36 +1,36 @@
 {
     "Middleware Helmet": {
-        "prefix": "exp4-mid-helmet",
+        "prefix": "e4-mid-helmet",
         "body": "app.use(helmet());$0",
         "description": "Security level middleware"
     },
     "Middleware Morgan": {
-        "prefix": "exp4-mid-logger",
+        "prefix": "e4-mid-logger",
         "body": "app.use(logger());$0",
         "description": "Initializing the logger/morgan middleware"
     },
     "Middleware Compression": {
-        "prefix": "exp4-mid-compress",
+        "prefix": "e4-mid-compress",
         "body": "app.use(compression({level:zlib.Z_DEFAULT_COMPRESSION}));$0",
         "description": "Compression Middleware"
     },
     "Middleware Body Parser Json": {
-        "prefix": "exp4-mid-body-parser-json",
+        "prefix": "e4-mid-body-parser-json",
         "body": "app.use(bodyParser.json());$0",
         "description": "For parsing application/json"
     },
     "Middleware Body Parser Url Encoded": {
-        "prefix": "exp4-mid-body-parser-url",
+        "prefix": "e4-mid-body-parser-url",
         "body": "app.use(bodyParser.urlencoded({extended: true}));$0",
         "description": "For parsing application/x-www-form-urlencoded"
     },
     "Middleware Method Override": {
-        "prefix": "exp4-mid-method-override",
+        "prefix": "e4-mid-method-override",
         "body": "app.use(methodOverride('_method'));$0",
         "description": "MethodOverride: override with POST having ?_method=DELETE"
     },
     "Middleware Static File": {
-        "prefix": "exp4-mid-static-file",
+        "prefix": "e4-mid-static-file",
         "body": "app.use(express.static(__dirname + '/public'));$0",
         "description": "Static file middleware"
     }

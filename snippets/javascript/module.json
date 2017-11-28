@@ -1,11 +1,11 @@
 {
     "Require ExpressJs 4 Module": {
-        "prefix": "exp4-require",
+        "prefix": "e4-require",
         "body": "const express = require('express');",
         "description": "Add Express Js 4 package from node_modules"
     },
     "ExpressJs 4 Namespace": {
-        "prefix": "exp4-namespace",
+        "prefix": "e4-namespace",
         "body": [
             "const express = require('express');",
             "const app = express();",
