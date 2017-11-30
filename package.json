@@ -1,8 +1,8 @@
 {
     "name": "expressjs-4-snippets",
     "displayName": "ExpressJs 4 Snippets",
-    "description": "ExpressJs 4 snippets",
-    "version": "1.0.1",
+    "description": "Just start use with e4 keys of ExpressJs 4 snippets.",
+    "version": "1.0.2",
     "publisher": "gurayyarar",
     "license": "MIT",
     "repository": {
