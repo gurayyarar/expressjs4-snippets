@@ -17,7 +17,7 @@
     "Router GET": {
         "prefix": "e4-router-get",
         "body": [
-            "app.get('${1:path}', (req, res) => {",
+            "router.get('${1:path}', (req, res) => {",
             "\t$2",
             "});$0"
         ],
@@ -26,7 +26,7 @@
     "Router POST": {
         "prefix": "e4-router-post",
         "body": [
-            "app.post('${1:path}', (req, res) => {",
+            "router.post('${1:path}', (req, res) => {",
             "\t$2",
             "});$0"
         ],
@@ -35,7 +35,7 @@
     "Router PUT": {
         "prefix": "e4-router-put",
         "body": [
-            "app.put('${1:path}', (req, res) => {",
+            "router.put('${1:path}', (req, res) => {",
             "\t$2",
             "});$0"
         ],
